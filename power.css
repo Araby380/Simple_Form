@@ -1,0 +1,106 @@
+body {
+				margin: 0;
+				padding: 0;
+				font-family: sans-serif;
+}
+
+.wrapper {
+  width: 500px;
+  height: 650px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  overflow: hidden;
+}
+
+.wave {
+  width: 1000px;
+  height: 1025px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+
+
+
+.box {
+				width: 300px;
+				padding: 40px;
+				position: absolute;
+				top: 350px;
+				left: 205px;
+				transform: translate(-50%,-50%);
+				background: #25386e;
+				text-align: center;
+				box-shadow: 0 0 15px;
+				opacity: 0.7;
+				
+				
+}
+
+.box input[type="text"], .box input[type="password"] {
+				border: 0;
+				background: none;
+				display: block;
+				margin: 20px auto;
+				text-align: center;
+				border: 2px solid #48181b;
+				padding: 14px 10px;
+				width: 200px;
+				outline: none;
+				color: white;
+			border-radius: 24px;
+			transition: 0.75s;
+			
+}
+
+.box h1 {
+				color: white;
+				font-weight: 500;
+				text-transform: capitalize;
+				text-shadow: 1px 1px 10px;
+
+}
+
+.box input[type="text"]:focus {
+				width: 280px;
+				border-color: #3cff2b;
+}
+
+.box input[type="password"]:focus {
+				width: 280px;
+				border-color: #3cff2b;
+}
+
+.box input[value="Login"] {
+				border: 0;
+				background: none;
+				display: block;
+				margin: 20px auto;
+				text-align: center;
+				border: 2px solid #48181b;
+				padding: 14px 10px;
+				width: 100px;
+				outline: none;
+				color: white;
+			border-radius: 24px;
+			transition: 0.75s;
+			cursor: pointer;
+}
+
+.box input[value="Login"]:hover {
+				background-color: #3cff2b;
+}
